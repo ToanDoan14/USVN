@@ -1,0 +1,15 @@
+:root{
+    --color-primary: #193963;
+    --color-secondary: #88b82e;
+    --color-background: #f3f7fa;
+    --color-backgroud-alt: #89b92e;
+    --color-background-special-page: #F8F9FF;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-text: #123663;
+    --color-light-blue: #0758C8;
+    --color-text-light: #e6edf4;
+    --color-yellow: rgba(251, 117, 0, .2);
+    --nav-bar-height: 65px;
+    --color-fade: #A7B0B4;
+}
