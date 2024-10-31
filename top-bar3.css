@@ -1,0 +1,39 @@
+.top-bar-info{
+    display: flex;
+    justify-content: space-between;
+}
+.top-bar-info a{
+    text-decoration: none;
+}
+.top-bar-logo-info h3{
+    color: var(--bs-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+.top-bar-logo-info p{
+    color: var(--bs-success);
+    font-weight: 700;
+}
+.slogan-item-info{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 300;   
+    text-wrap: nowrap;
+    white-space-collapse: collapse;
+    text-wrap-mode: nowrap;
+    color: var(--bs-primary);
+}
+.top-bar-slogan{
+    display: flex;
+    margin: 30px;
+}
+.top-bar-slogan-item h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--bs-blue);
+    padding-left: 30px;
+}
+.top-bar-slogan-item p{
+    padding-left: 30px;
+}
