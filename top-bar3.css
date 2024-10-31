@@ -1,6 +1,12 @@
+.top-bar-info img{
+    width: 68px;
+    border-style: none;
+    vertical-align: center;
+}
 .top-bar-info{
     display: flex;
     justify-content: space-between;
+    height: 96px;
 }
 .top-bar-info a{
     text-decoration: none;
@@ -11,8 +17,9 @@
     font-weight: 700;
 }
 .top-bar-logo-info p{
-    color: var(--bs-success);
+    color: #88B82E;
     font-weight: 700;
+    font-size: 16px;
 }
 .slogan-item-info{
     text-align: left;
@@ -25,15 +32,18 @@
 }
 .top-bar-slogan{
     display: flex;
-    margin: 30px;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
 }
 .top-bar-slogan-item h3{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 0;
-    color: var(--bs-blue);
+    color: #0A92CD;
     padding-left: 30px;
 }
 .top-bar-slogan-item p{
     padding-left: 30px;
+    color: #193963;
 }
