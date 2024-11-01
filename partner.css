@@ -20,7 +20,7 @@
     font-weight: 700;
     margin-bottom: 10px;
     width: 100%;
-    color: var(--bs-primary);
+    color: #193963;
 }
 .partner-item{
     width: 100%;
@@ -40,6 +40,6 @@
 
 .col-2{
     flex: 0 0 auto;
-    width: 160px;
-    height: 120px;
+    width: 14.67%;
+    height: 100% ;
 }
