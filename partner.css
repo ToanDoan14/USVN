@@ -2,6 +2,11 @@
     padding-top: 24px;
     padding-bottom: 40px;
 }
+
+.partner-container .text-green{
+    font-weight: 700;
+    color: var(--bs-green);
+}
 .text-green{
     color: var(--bs-green);
 }
@@ -12,7 +17,7 @@
 .partner-container h3{
     font-size: 20px;
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     width: 100%;
     color: var(--bs-primary);
