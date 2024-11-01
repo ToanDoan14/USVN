@@ -96,8 +96,8 @@
     color: #193963;
 }
 .news-block-right hr{
-    display: 1px dashed #D3D8E4;
-    opacity: 1;
+    border: 1px dashed #D3D8E4;
+    opacity: 0.2;
 }
 .news-block-right-item p:hover{
     color: #89B92E;
