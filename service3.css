@@ -56,14 +56,14 @@
 }
 
 .service-item-img:hover img{
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .service-item-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
 }
 .service-item-info{
     margin-bottom: 0;
@@ -72,7 +72,7 @@
 }
 .service-item-info a{
     text-decoration: none;
-    text-size: 20px
+    text-size: 20px;
     font-weight: 400;
     padding: 20px 16px 24px;
 }
@@ -80,4 +80,11 @@
     display: flex;
     justify-content: center;
     color: #193963;
+    text-align: center;
+    font-size: 105%;
+    letter-spacing: -0.5px;
+}
+
+.service-item-info-title:hover{
+    color: #88B82E;
 }
