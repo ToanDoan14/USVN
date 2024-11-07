@@ -1,6 +1,43 @@
+.nav-bar .menu-item {
+    position: relative;
+    padding: 5p x 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .menu-item .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: #0d3c71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 200px;
+    padding: 5px 0;
+    z-index: 10;
+}
+
+.nav-bar .menu-item .submenu a {
+    display: block;
+    padding: 8px 20px;
+    color: #0d3c71;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-bar .menu-item:hover .submenu {
+    display: block;
+}
+
 .nav-bar {
     background-color: #193963;
     position: sticky;
+    transition: top 0.5s ease;
 }
 .nav-bar-main{
     display: flex;
@@ -8,8 +45,8 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 3px;    
+    padding-top: 1px;
+    padding-bottom: -20px;    
 }
 
 .nav-bar-main ul{
@@ -18,4 +55,7 @@
 
 .nav-bar-main li{
     font-weight: 600;
+}
+.sticky {
+    top: 0;
 }
