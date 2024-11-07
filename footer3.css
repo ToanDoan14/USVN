@@ -32,6 +32,12 @@
     text-decoration: none;
     color: var(--bs-white);
 }
+
+.footer-quick-links:hover a{
+    color: #88B82E;
+}
+
+
 .footer-info-contact h6{
     font-size: 16px;
     font-weight: 500;
