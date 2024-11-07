@@ -33,11 +33,6 @@
     color: var(--bs-white);
 }
 
-.footer-quick-links a:hover{
-    color: #88B82E;
-}
-
-
 .footer-info-contact h6{
     font-size: 16px;
     font-weight: 500;
@@ -68,5 +63,9 @@
 
 .footer-info-contact a:hover{
     text-decoration: underline;
+    color: #88B82E;
+}
+
+.footer-quick-links a:hover{
     color: #88B82E;
 }
