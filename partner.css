@@ -11,15 +11,21 @@
     color: var(--bs-green);
 }
 .row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: auto;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
 }
 .partner-container h3{
     font-size: 20px;
     text-align: left;
     font-weight: 700;
-    margin-bottom: 10px;
     width: 100%;
+    margin-bottom: 10px;
     color: #193963;
 }
 .partner-item{
@@ -30,6 +36,7 @@
     aspect-ratio: 17/11;
     border-radius: 2px;
     display: flex;
+    transition: .2s ease-in;
 }
 .partner-item img{
     max-width: 90%;
@@ -40,6 +47,5 @@
 
 .col-2{
     flex: 0 0 auto;
-    width: 14.67%;
-    height: 100% ;
+    width: 13.66%;
 }
