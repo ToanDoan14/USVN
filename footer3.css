@@ -33,7 +33,7 @@
     color: var(--bs-white);
 }
 
-.footer-quick-links:hover a{
+.footer-quick-links a:hover{
     color: #88B82E;
 }
 
@@ -64,4 +64,9 @@
     font-size: 14px;
     opacity: 0.8;
     text-align: center;
+}
+
+.footer-info-contact a:hover{
+    text-decoration: underline;
+    color: #88B82E;
 }
