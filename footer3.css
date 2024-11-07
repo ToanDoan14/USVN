@@ -60,10 +60,6 @@
     opacity: 0.8;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 09e32ce426a49effbdd43ba83dd7c8e37f4f208d
 .footer-info-contact a:hover{
     text-decoration: underline;
     color: #88B82E;
@@ -71,7 +67,6 @@
 
 .footer-quick-links a:hover{
     color: #88B82E;
-<<<<<<< HEAD
 }
 .back-to-top .btn-message{
     position: fixed;
@@ -88,6 +83,4 @@
     width: 60px;
     bottom: 120px;
     height: 60px;
-=======
->>>>>>> 09e32ce426a49effbdd43ba83dd7c8e37f4f208d
 }
