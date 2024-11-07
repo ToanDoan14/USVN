@@ -45,4 +45,44 @@
 .select-btn i {
     font-size: 20px;
     transition: 0.3s;
+    
+}
+
+.select-menu .select-btn i{
+    transition: rotate(-180deg);
+}
+
+.options{
+    display: block;
+    opacity: 1;
+    max-height: 300px;
+}
+
+.option {
+    display: flex;
+    height: 42px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background-color: var(--color-white);
+}
+
+.option-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+    text-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.form-input-group input{
+    border: none;
+    flex: 1;
+    height: 100%;
+    padding: 0 16px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
 }
