@@ -59,3 +59,27 @@
     opacity: 0.8;
     text-align: center;
 }
+.footer-info-contact a:hover{
+    text-decoration: underline;
+    color: #88B82E;
+}
+
+.footer-quick-links a:hover{
+    color: #88B82E;
+}
+.back-to-top .btn-message{
+    position: fixed;
+    right: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #89b92e;
+    box-shadow: 0 2px 4px;
+    animation: slideUp;
+}
+.btn-message{
+    width: 60px;
+    bottom: 120px;
+    height: 60px;
+}
