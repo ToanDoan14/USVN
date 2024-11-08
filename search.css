@@ -5,7 +5,10 @@
     justify-content: space-around;
     max-width: 100%;
     padding: 80px 0;
+    background-size: cover;
+    background-position: center;
 }
+
 .search .search-container {
     display: flex;
     position: relative;
@@ -56,9 +59,9 @@
     transition: 0.3s;
     margin-left: 8px;
 }
-.select-btn i::before{
+/* .select-btn i::before{
     
-}
+} */
 
 .select-menu .select-btn i{
     transition: rotate(-180deg);

@@ -3,7 +3,7 @@
     color: var(--bs-white);
     padding-top: 32px;
 }
-.row {
+.row-footer {
     display: flex;
     flex-wrap: wrap;
     --bs-gutter-x: 1.5rem;
@@ -68,21 +68,41 @@
 .footer-quick-links a:hover{
     color: #88B82E;
 }
-.back-to-top .btn-message{
+
+/* Container for positioning */
+.back-to-top,
+.btn-message
+{
     position: fixed;
-    right: 16px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-background-alt); /* Green background */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #89b92e;
-    box-shadow: 0 2px 4px;
-    animation: slideUp;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
 }
-.btn-message{
-    width: 60px;
-    bottom: 120px;
+
+
+.back-to-top {
+    bottom: 196px;
+    width: 40px;
+    height: 40px;
+    right: 26px;
+    display: flex; 
+}
+
+.btn-message {
+    bottom: 128px;
+    width: 60px; 
     height: 60px;
 }
 
-/* duma */
+.back-to-top img,
+.btn-message img {
+    width: 24px;
+    height: 24px;
+}
