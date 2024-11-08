@@ -3,7 +3,7 @@
     color: var(--bs-white);
     padding-top: 32px;
 }
-.row {
+.row-footer {
     display: flex;
     flex-wrap: wrap;
     --bs-gutter-x: 1.5rem;

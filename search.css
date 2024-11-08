@@ -59,9 +59,9 @@
     transition: 0.3s;
     margin-left: 8px;
 }
-.select-btn i::before{
+/* .select-btn i::before{
     
-}
+} */
 
 .select-menu .select-btn i{
     transition: rotate(-180deg);

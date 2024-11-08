@@ -10,7 +10,7 @@
 .text-green{
     color: var(--bs-green);
 }
-.row{
+.row-1{
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -23,7 +23,7 @@
 .partner-container h3{
     font-size: 20px;
     text-align: left;
-    font-weight: 700;
+    font-weight: 600;
     width: 100%;
     margin-bottom: 10px;
     color: #193963;
@@ -47,5 +47,11 @@
 
 .col-2{
     flex: 0 0 auto;
-    width: 13.66%;
+    width: 16.66%;
 }
+
+@media (min-width: 1200px){
+    .container,.partner-container{
+        max-width: 1140px;
+    }
+} 
