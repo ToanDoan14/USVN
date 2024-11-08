@@ -5,7 +5,10 @@
     justify-content: space-around;
     max-width: 100%;
     padding: 80px 0;
+    background-size: cover;
+    background-position: center;
 }
+
 .search .search-container {
     display: flex;
     position: relative;
