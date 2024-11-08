@@ -1,11 +1,11 @@
-/* .search {
+.search {
     background-image: url('http://ucvn.vn:8084/img/publishImg/background-search.png');
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     max-width: 100%;
     padding: 80px 0;
-} */
+}
 .search .search-container {
     display: flex;
     position: relative;
