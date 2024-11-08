@@ -1,14 +1,21 @@
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0rem 0rem;
+    padding-right: 2rem;
+}
+
 .nav-bar .menu-item {
     position: relative;
-    padding: 5p x 20px;
     color: white;
     font-size: 16px;
     cursor: pointer;
     display: flex;
     align-items: center;
+    padding: 6px 0px;
 }
 
-.nav-bar .menu-item .submenu {
+.submenu {
     display: none;
     position: absolute;
     top: 100%;
@@ -17,45 +24,87 @@
     color: #0d3c71;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    min-width: 200px;
+    width: auto;
     padding: 5px 0;
     z-index: 10;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
 }
 
 .nav-bar .menu-item .submenu a {
-    display: block;
-    padding: 8px 20px;
+    display: flex;
+    padding: 8px 14px 8px 20px;
     color: #0d3c71;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
 }
 
-.nav-bar .menu-item:hover .submenu {
-    display: block;
+.nav-bar .menu-item .submenu a:hover {
+    color: #88B82E;
+    text-decoration: underline;
+}
+.menu-item:hover .submenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .nav-bar {
     background-color: #193963;
     position: sticky;
     transition: top 0.5s ease;
+    height: 65px;
 }
-.nav-bar-main{
+
+.nav-bar-main {
     display: flex;
     height: 100%;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
     padding-top: 1px;
-    padding-bottom: -20px;    
 }
 
-.nav-bar-main ul{
+.nav-bar-main ul {
     list-style: none;
+    padding: 0px 0px 0px 0px;
 }
 
-.nav-bar-main li{
+.nav-bar-main li {
     font-weight: 600;
 }
+
 .sticky {
     top: 0;
 }
+
+.submenu-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu-column a {
+    padding: 8px 14px 8px 20px;
+    color: #0d3c71;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.submenu-column a:hover {
+    color: #88B82E;
+    text-decoration: underline;
+}
+
+.menu-item:not(:hover) .submenu {
+    display: none;
+  }
+ 
+/* Đang có lỗi với submenu */

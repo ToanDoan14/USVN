@@ -23,6 +23,7 @@
     color: #88B82E;
     font-weight: 500;
     font-size: 16px;
+    text-align: left;
 }
 .slogan-item-info{
     text-align: left;
@@ -45,8 +46,10 @@
     margin-bottom: 0;
     color: #0A92CD;
     padding-left: 30px;
+    margin-bottom: 0;
 }
 .top-bar-slogan-item p{
     padding-left: 30px;
     color: #193963;
+    margin-bottom: 0;
 }
