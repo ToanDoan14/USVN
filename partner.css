@@ -1,3 +1,6 @@
+.partner-content-box-row{
+    display: flex;
+}
 .partner-container {
     padding-top: 24px;
     padding-bottom: 40px;

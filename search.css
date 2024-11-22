@@ -1,48 +1,89 @@
 .search {
-    background-image: url('http://ucvn.vn:8084/img/publishImg/background-search.png');
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 100%;
-    padding: 80px 0;
+    width: 100%;
+    background: url('http://ucvn.vn:8084/img/publishImg/background-search.png') no-repeat;
     background-size: cover;
     background-position: center;
+    padding: 43px 0 60px;
+    position: relative;
+    background-attachment: fixed;
+}
+@supports (-webkit-touch-callout: none) {
+    .search {
+        background-attachment: scroll;
+    }
+}
+
+.search::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .search .search-container {
-    display: flex;
     position: relative;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    
+    z-index: 2;
 }
 
-.form-input-group {
+.search .form-input-group {
     display: flex;
     align-items: center;
-    align-items: center;
+    position: relative;
     border: 1px solid var(--color-text-light);
     background-color: var(--color-white);
     width: 760px;
+    max-width: 100%;
     height: 52px;
     border-radius: 100px;
     margin-top: 8px;
 }
 
+.form-input-group input {
+    border: none;
+    flex: 1;
+    height: 100%;
+    padding: 0 16px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-input-group button {
+    width: auto;
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+    margin-top: -1px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* select */
 .search-option {
     height: 100%;
     min-width: 146px;
     background-color: var(--color-background);
     border-radius: 100px;
+    background-color: #eff1f3;
 }
 
-.select-menu{
+.select-menu {
     width: 100%;
     height: 100%;
     border: none;
 }
 
-.select-btn {
+.select-menu .select-btn {
     display: flex;
     height: 100%;
     padding: 20px 16px 20px 20px;
@@ -57,47 +98,79 @@
 .select-btn i {
     font-size: 20px;
     transition: 0.3s;
-    margin-left: 8px;
-}
-/* .select-btn i::before{
-    
-} */
-
-.select-menu .select-btn i{
-    transition: rotate(-180deg);
 }
 
-.options{
+.select-menu.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu .options {
+    position: relative;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-in-out;
+    max-height: 0;
+    z-index: 99;
+    animation: slideUp 0.5s ease forwards; 
+    min-width: 140px;
+}
+
+.select-menu .options::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: -15px;
+    left: 0;
+}
+
+.select-menu.active .options {
     display: block;
     opacity: 1;
     max-height: 300px;
 }
 
-.option {
+.options .option {
     display: flex;
     height: 42px;
     cursor: pointer;
     padding: 0 16px;
     border-radius: 8px;
     align-items: center;
-    background-color: var(--color-white);
+    background: #fff;
 }
 
-.option-text {
+.options .option:hover {
+    background: #f2f2f2;
+}
+
+.option .option-text {
     font-size: 15px;
     font-weight: 500;
-    color: var(--text-color-secondary);
+    color: #333;
     text-wrap: nowrap;
     white-space: nowrap;
 }
 
-.form-input-group input{
-    border: none;
-    flex: 1;
-    height: 100%;
-    padding: 0 16px;
-    outline: none;
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
+@media (max-width: 992px) {
+    .search-option {
+        min-width: 100px;
+    }
+    .select-btn .sBtn-text {
+        height: auto;
+        min-height: 1.4375em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;  
+    }
+    .form-input-group input {
+        font-size: 14px; 
+        padding: 0 10px; 
+        min-width: 100px;
+    }
 }
