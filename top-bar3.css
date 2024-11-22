@@ -1,55 +1,76 @@
-.top-bar-info img{
-    width: 68px;
+img, svg {
+    vertical-align: middle;
     border-style: none;
-    vertical-align: center;
 }
-.top-bar-info{
+
+.top-bar-info {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 96px;
-    text-wrap: nowrap;
     white-space: nowrap;
-    text-align: center;
 }
-.top-bar-info a{
-    text-decoration: none;
+
+.top-bar-info img {
+    width: 68px;
 }
-.top-bar-logo-info h3{
+
+.top-bar-logo-info h3 {
     color: #193963;
     font-size: 20px;
     font-weight: 700;
 }
-.top-bar-logo-info p{
+
+.top-bar-logo-info p {
     color: #88B82E;
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
     text-align: left;
 }
-.slogan-item-info{
-    text-align: left;
-    font-size: 14px;
-    font-weight: 300;   
-    text-wrap: nowrap;
-    white-space-collapse: collapse;
-    text-wrap-mode: nowrap;
-    color: var(--bs-primary);
+
+.top-bar-info a {
+    text-decoration: none;
 }
-.top-bar-slogan{
+
+.top-bar-slogan {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
 }
-.top-bar-slogan-item h3{
+
+.top-bar-slogan-item {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-slogan-item h3 {
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 0;
     color: #0A92CD;
-    padding-left: 30px;
-    margin-bottom: 0;
+    margin: 0;
+    padding-left: 16px;
 }
-.top-bar-slogan-item p{
-    padding-left: 30px;
+
+.top-bar-slogan-item p {
     color: #193963;
-    margin-bottom: 0;
+    margin: 0;
+    padding-left: 16px;
+}
+
+.top-bar-slogan-item svg {
+    width: 28px;
+    height: 28px;
+    padding-top: 10px;
+}
+
+.top-bar-slogan-item svg path {
+    fill: #88B82E;
+}
+
+.slogan-item-info {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--bs-primary);
+    text-align: left;
 }
