@@ -1,57 +1,52 @@
-.service .container{
-    background-color: #fff;
+.service .container {
+    margin-top: -171px;
+    z-index: 10;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-top: 170px;
-    z-index: 10px;
     position: relative;
+    background-color: #fff;
     padding-top: 24px;
     padding-bottom: 36px;
 }
-.service h2{
-    color: #193963;
-    font-weight: 700;
 
-}
-.text-green{
-    color: #88B82E;
-    font-weight: 700;
-}
-.service-slider-container{
-    overflow: visible;
-    margin: auto;
+.service-slider-container {
+    position: relative;
     width: 100%;
-    position: relative;
-}
-.service-slide.active{
-    opacity: 1;
+    margin: auto;
     overflow: visible;
+}
+
+.service-slide {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}
+
+.service-slide.active {
+    opacity: 1;
+    visibility: visible;
     position: relative;
 }
-.row{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-.5* var(--bs-gutter-x));
-    margin-left: calc(-.5* var(--bs-gutter-x));
-    margin-right: calc(-1* var(--bs--gutter-y));
-}
-.col-md-3.col-6{
-    margin: 5px;
-}
-.service-item{
+
+.service-item {
     width: 100%;
     padding: 10px;
     margin-bottom: 24px;
-    border-radius: 10px;
     display: block;
-    box-shadow: 0 0.35em 0.25em 0;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 0.425em 0.5em 0 #cecece;
 }
 
-.service-item-img img{
-    transition: 0.2s ease-in;
-    transform-origin: center;
-}
 .service-item-img {
     width: 100%;
     aspect-ratio: 35 / 23;
@@ -60,41 +55,112 @@
     display: block;
 }
 
-.service-item-img:hover img{
-    transform: scale(1.1);
-}
-
-.service-item-img img{
+.service-item-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
-.service-item-info{
+
+.service-item-info {
+    color: var(--color-primary);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px 16px 24px;
     margin-bottom: 0;
+    position: relative;
+    display: flex;
     align-items: center;
     width: 100%;
 }
-.service-item-info a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 20px 16px 24px;
-}
-.service-item-info-title{
-    display: flex;
-    justify-content: center;
-    color: #193963;
+.service-item-info-title {
+    line-height: 30px;
+    color: var(--color-primary);
+    display: block;
+    width: 100%;
     text-align: center;
-    font-size: 105%;
-    letter-spacing: -0.5px;
-    font-weight: 900;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    overflow: hidden;
 }
 
-.service-item-info-title:hover{
-    color: #88B82E;
+.service-slide-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% + 8px);
+    transform: translate(-50%, -50%);
+    width: calc(100% + 96px);
+    left: 50%;
+    max-width: 100vw;
+    height: 0;
+    overflow: visible;
 }
 
-.service-item-img img:hover{
+.service-slide-control button {
+    border: none;
+    background-color: var(--white-color);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+.service-slide-control button img {
+    max-height: 100%;
+}
+
+/* event hover */
+.service-item-menu ul>li a:hover {
+    background-color: var(--color-text-light);
+}
+.service-item:hover {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
+}
+.service-item-info-title:hover {
+    color: var(--color-secondary);
+}
+.service-item-img img:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+    .service-item {
+        height: 339px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .service-item {
+        height: 291px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-item {
+        height: 220px;
+    }
+    .service-item-info {
+        font-size: 16px;
+        padding: 16px;
+    }
+    .service-item-info-title {
+        line-height: 24px;
+    }
+    .service-item-menu {
+        top: 16px;
+    }
+}
+
+@media (max-width: 769px) {
+    .service-item {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 15 / 16;
+        min-height: 190px;
+    }
+    .service-slide-control button {
+        width: 32px;
+        height: 32px;
+    }
 }
