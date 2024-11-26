@@ -58,6 +58,21 @@
     align-items: center;
 }
 
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
 .nav-bar {
     background-color: #193963;
     position: sticky;
@@ -106,5 +121,22 @@
 .menu-item:not(:hover) .submenu {
     display: none;
   }
- 
-/* Đang có lỗi với submenu */
+
+.nav-bar-actions{
+    display: flex;
+}
+
+.nav-bar-icons{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.c-pointer{
+    cursor: pointer;
+}
+.nav-bar-icon-language img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
