@@ -85,8 +85,8 @@
 
 .select-menu .select-btn {
     display: flex;
-    /* height: 100%; */
-    padding: 20px 16px 20px 20px;
+    height: 100%;
+    padding: 0px 16px 0px 20px;
     font-size: 15px;
     font-weight: 400;
     border-radius: 6px;
@@ -115,7 +115,7 @@
     opacity: 0;
     animation: fadeIn 0.3s ease-in-out;
     max-height: 0;
-    z-index: 99;
+    z-index: 9999;
     animation: slideUp 0.5s ease forwards; 
     min-width: 140px;
 }
