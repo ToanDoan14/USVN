@@ -1,3 +1,6 @@
+.nav-bar{
+    z-index: 1000;
+}
 .nav-link {
     font-size: 14px;
     font-weight: 500;
@@ -28,7 +31,6 @@
     padding: 5px 0;
     z-index: 10;
     display: flex;
-    flex-direction: row;
     width: max-content;
 }
 
@@ -43,10 +45,6 @@
 .nav-bar .menu-item .submenu a:hover {
     color: #88B82E;
     text-decoration: underline;
-}
-.menu-item:hover .submenu {
-    display: flex;
-    flex-direction: row;
 }
 
 .nav-item {
@@ -118,6 +116,11 @@
     text-decoration: underline;
 }
 
+.menu-item:hover .submenu {
+    display: flex;
+    flex-direction: row;
+}
+
 .menu-item:not(:hover) .submenu {
     display: none;
   }
@@ -139,4 +142,13 @@
     width: 24px;
     height: 24px;
     object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+    .nav-bar-list {
+        gap: 32px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
 }

@@ -42,6 +42,7 @@ img, svg {
 .top-bar-slogan-item {
     display: flex;
     align-items: center;
+    padding-left: 16px;
 }
 
 .top-bar-slogan-item h3 {
@@ -78,6 +79,7 @@ img, svg {
 .top-bar-slogan-item:hover {
     cursor: pointer;
     box-shadow: inset 7px 0 7px -9px #193963; 
+    transition: ease-in 0.3s;
 }
 
 @media (max-width: 1200px) {
