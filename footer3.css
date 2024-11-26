@@ -112,6 +112,63 @@
     color: var(--color-secondary);
 }
 
+/* Cấu hình cho nút Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 100px; /* Khoảng cách từ dưới lên */
+    right: 20px; /* Khoảng cách từ phải qua */
+    width: 50px; /* Kích thước nút */
+    height: 50px;
+    background-color: #88c540; /* Màu nền nút */
+    border-radius: 50%; /* Tạo nút tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    z-index: 1000; /* Luôn hiển thị trên các thành phần khác */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top img {
+    width: 24px; /* Kích thước hình ảnh */
+    height: 24px;
+}
+
+.back-to-top:hover {
+    background-color: #6ea22e; /* Đổi màu khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ */
+}
+
+/* Cấu hình cho nút Message */
+.btn-message {
+    position: fixed;
+    bottom: 30px; /* Khoảng cách từ dưới lên */
+    right: 20px; /* Khoảng cách từ phải qua */
+    width: 60px; /* Kích thước nút */
+    height: 60px;
+    background-color: #88c540; /* Màu nền nút */
+    border-radius: 50%; /* Tạo nút tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    z-index: 1000; /* Luôn hiển thị trên các thành phần khác */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-message img {
+    width: 30px; /* Kích thước hình ảnh */
+    height: 30px;
+}
+
+.btn-message:hover {
+    background-color: #6ea22e; /* Đổi màu khi hover */
+    transform: scale(1.1); /* Phóng to nhẹ */
+}
+
+
 @media (max-width: 769px) {
     .footer-info-contact h6,
     .footer-quick-links h6,
