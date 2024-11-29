@@ -99,6 +99,15 @@
     text-overflow: ellipsis;
 }
 
+.slide a{
+    text-decoration: none;
+}
+
+.slide-item-btn {
+    background-color: var(--color-secondary);
+    padding: 10px;
+    border-radius: 50px;
+}
 /* slide active */
 .slide-item.active {
     opacity: 1;

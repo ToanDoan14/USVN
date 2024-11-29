@@ -1,15 +1,7 @@
-$(document).ready(function () {
-    // Khi click vào button dropdown, toggle (hiện/ẩn) menu
-    $('.select-btn').click(function () {
-        $('.select-menu').toggleClass('show');
-    });
+const selectBtn = document.querySelector('.select-btn');
+const options = document.querySelector('.select-menu .options');
 
-    // Đóng dropdown khi click ra ngoài
-    $(document).click(function (event) {
-        if (!$(event.target).closest('.select-menu').length) {
-            $('.select-menu').removeClass('show');
-        }
-    });
-
-    
+selectBtn.addEventListener('click', () => {
+    const menu = selectBtn.closest('.select-menu');
+    menu.classList.toggle('active');
 });
