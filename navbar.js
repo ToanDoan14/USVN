@@ -28,3 +28,16 @@ $(document).ready(function () {
         }
     );
 });
+
+const menuItem = document.querySelector('.menu-item');
+const submenu = document.querySelector('.submenu');
+
+menuItem.addEventListener('mouseover', () => {
+    submenu.style.visibility = 'visible';
+    submenu.style.opacity = '1';
+});
+
+menuItem.addEventListener('mouseleave', () => {
+    submenu.style.visibility = 'hidden';
+    submenu.style.opacity = '0';
+});

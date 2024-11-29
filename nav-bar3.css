@@ -17,6 +17,12 @@
     padding: 6px 0px;
 }
 
+.menu-item .submenu {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 3s ease-out;
+}
+
 .submenu {
     display: none;
     position: absolute;
@@ -31,7 +37,19 @@
     z-index: 10;
     display: flex;
     width: max-content;
-    margin-top: 5px;
+    margin-top: 3px;
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .nav-bar .menu-item .submenu a {
@@ -119,6 +137,8 @@
 .menu-item:hover .submenu {
     display: flex;
     flex-direction: row;
+    visibility: visible;
+    opacity: 1;
 }
 
 .menu-item:not(:hover) .submenu {
