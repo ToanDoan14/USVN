@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: inherit;
 }
-
+.gap-6{
+    gap: 2.5rem;
+}
 :root{
     --color-primary: #193963;
     --color-secondary: #88b82e;

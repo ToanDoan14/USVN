@@ -5,7 +5,6 @@
     font-size: 14px;
     font-weight: 500;
     padding: 0rem 0rem;
-    padding-right: 2rem;
 }
 
 .nav-bar .menu-item {
@@ -32,6 +31,7 @@
     z-index: 10;
     display: flex;
     width: max-content;
+    margin-top: 5px;
 }
 
 .nav-bar .menu-item .submenu a {
