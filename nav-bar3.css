@@ -197,6 +197,15 @@
     background-color: transparent;
 }
 
+@media (min-width: 992px) {
+    .search-container:hover .search-input {
+        width: 280px;
+        opacity: 1;
+        padding: 0 20px;
+        right: -11px;
+    }
+}
+
 @media (max-width: 1200px) {
     .nav-bar-list {
         gap: 32px;

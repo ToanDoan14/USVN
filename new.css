@@ -102,3 +102,22 @@
 .news-block-right-item p:hover{
     color: #89B92E;
 }
+
+@media (max-width: 992px) {
+    .news-tabs {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        width: auto;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+        .news-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+    .news-block {
+        flex-direction: column;
+    }
+}

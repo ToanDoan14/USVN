@@ -115,57 +115,158 @@
 /* Cấu hình cho nút Back to Top */
 .back-to-top {
     position: fixed;
-    bottom: 100px; /* Khoảng cách từ dưới lên */
-    right: 20px; /* Khoảng cách từ phải qua */
-    width: 50px; /* Kích thước nút */
+    bottom: 100px; 
+    right: 20px; 
+    width: 50px; 
     height: 50px;
-    background-color: #88c540; /* Màu nền nút */
-    border-radius: 50%; /* Tạo nút tròn */
+    background-color: #88c540; 
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-    z-index: 1000; /* Luôn hiển thị trên các thành phần khác */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .back-to-top img {
-    width: 24px; /* Kích thước hình ảnh */
+    width: 24px; 
     height: 24px;
 }
 
 .back-to-top:hover {
-    background-color: #6ea22e; /* Đổi màu khi hover */
-    transform: scale(1.1); /* Phóng to nhẹ */
+    background-color: #6ea22e;
+    transform: scale(1.1);
 }
 
-/* Cấu hình cho nút Message */
+
 .btn-message {
     position: fixed;
-    bottom: 30px; /* Khoảng cách từ dưới lên */
-    right: 20px; /* Khoảng cách từ phải qua */
-    width: 60px; /* Kích thước nút */
+    bottom: 30px; 
+    right: 20px; 
+    width: 60px; 
     height: 60px;
-    background-color: #88c540; /* Màu nền nút */
-    border-radius: 50%; /* Tạo nút tròn */
+    background-color: #88c540; 
+    border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-    z-index: 1000; /* Luôn hiển thị trên các thành phần khác */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-message img {
-    width: 30px; /* Kích thước hình ảnh */
+    width: 30px; 
     height: 30px;
 }
 
 .btn-message:hover {
-    background-color: #6ea22e; /* Đổi màu khi hover */
-    transform: scale(1.1); /* Phóng to nhẹ */
+    background-color: #6ea22e;
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 1024px) {
+    .row-footer {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer-info-title img {
+        max-width: 80%;
+    }
+
+    .footer-social-links {
+        justify-content: center;
+    }
+
+    .footer-social-links a {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding-top: 24px;
+    }
+
+    .footer-info-contact, 
+    .footer-quick-links {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-quick-links a {
+        font-size: 14px;
+    }
+
+    .back-to-top {
+        bottom: 80px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-to-top img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn-message {
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-message img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .footer {
+        padding-top: 16px;
+    }
+
+    .footer-info h6 {
+        font-size: 14px;
+    }
+
+    .footer-info-title p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-social-links a {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-quick-links a {
+        font-size: 13px;
+    }
+
+    .footer-credits {
+        font-size: 12px;
+    }
+
+    .back-to-top {
+        bottom: 60px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .btn-message {
+        bottom: 15px;
+        width: 45px;
+        height: 45px;
+    }
 }
 
 
