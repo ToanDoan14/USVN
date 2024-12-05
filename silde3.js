@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const slider = document.querySelector("#slider");
     const slides = slider.querySelectorAll(".slide-item");
@@ -8,11 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let autoSlideInterval;
 
     const changeSlide = (index) => {
-        slides.forEach((slide, i) => {
-            slide.classList.remove("active");
-            slide.style.transform = `translateX(${100 * (i - index)}%)`;
-        });
+        // Remove active class from all slides
+        slides.forEach((slide) => slide.classList.remove("active"));
 
+        // Add active class to the current slide
         slides[index].classList.add("active");
     };
 
@@ -26,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         changeSlide(currentIndex);
     };
 
+    // Event listeners for buttons
     nextButton.addEventListener("click", () => {
         nextSlide();
         resetAutoSlide();
@@ -36,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         resetAutoSlide();
     });
 
+    // Auto-slide every 20 seconds
     const startAutoSlide = () => {
         autoSlideInterval = setInterval(nextSlide, 20000);
     };
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         startAutoSlide();
     };
 
+    // Initialize slider
     const initializeSlider = () => {
         changeSlide(currentIndex);
         startAutoSlide();
