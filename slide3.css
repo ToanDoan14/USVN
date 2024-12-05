@@ -101,13 +101,19 @@
 
 .slide a{
     text-decoration: none;
+    font-weight: 600;
+    color: var(--color-background);
 }
 
 .slide-item-btn {
     background-color: var(--color-secondary);
-    padding: 10px;
-    border-radius: 50px;
+    padding: 5px;
+    border-radius: 5px;
 }
+
+/* .slide-item-btn:hover{
+    background-color: gray;
+} */
 /* slide active */
 .slide-item.active {
     opacity: 1;
