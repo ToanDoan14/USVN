@@ -41,3 +41,13 @@ menuItem.addEventListener('mouseleave', () => {
     submenu.style.visibility = 'hidden';
     submenu.style.opacity = '0';
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const navBarMain = document.querySelector(".nav-bar-main");
+
+    // Toggle menu on mobile
+    menuIcon.addEventListener("click", () => {
+        navBarMain.classList.toggle("active");
+    });
+});
