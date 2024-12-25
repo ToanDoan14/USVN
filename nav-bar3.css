@@ -219,6 +219,53 @@
     white-space: nowrap;
 }
 
+
+.nav-bar {
+    background-color: #193963;
+    position: sticky;
+    top: 0;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.nav-bar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar-logo img {
+    width: 44px;
+    height: auto;
+}
+
+.nav-bar-logo-content {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .nav-bar-actions,
+    .nav-bar-main {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
 @media (min-width: 992px) {
     .nav-bar-logo {
         display: none; 
